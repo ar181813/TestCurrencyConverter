@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TipCalc</string>
+    <string name = "label_bill">Bill</string>
+    <string name = "label_time_workout">Time (mins)</string>
+    <string name = "label_tip">Tip ($):</string>
+    <string name = "label_total">Total:</string>
+    <string name = "amount_weight_hint">Enter weight</string>
+    <string name = "amount_tip_percent_hint">Enter tip</string>
+    <string name = "button_calculate">Calculate</string>
+
+</resources>
