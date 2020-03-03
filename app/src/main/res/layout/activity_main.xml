@@ -13,7 +13,7 @@
 
 
         <EditText
-            android:id="@+id/amount_weight"
+            android:id="@+id/amount_Dollars"
             style="@style/InputStyle"
 
             android:layout_alignBottom="@+id/spinner1"
@@ -24,33 +24,6 @@
             android:layout_toRightOf="@+id/spinner1"
             android:hint="@string/amount_weight_hint"
             android:inputType="numberDecimal" />
-
-        <TextView
-            android:id="@+id/label_time_workout"
-            style="@style/LabelStyle"
-            android:layout_width="154dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/spinner1"
-            android:layout_alignLeft="@+id/spinner1"
-            android:layout_alignRight="@+id/spinner1"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="3dp"
-            android:text="@string/label_time_workout" />
-
-        <!-- red line -->
-
-        <EditText
-            android:id="@+id/amount_time"
-            style="@style/InputStyle"
-            android:layout_alignRight="@id/amount_weight"
-            android:layout_alignBottom="@+id/label_time_workout"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginBottom="-13dp"
-            android:layout_toRightOf="@+id/label_time_workout"
-            android:hint="@string/label_time_workout"
-            android:inputType="number" />
-
 
         <Spinner
             android:id="@+id/spinner1"
@@ -68,7 +41,7 @@
             android:id="@+id/label_total"
             style="@style/LabelStyle"
             android:layout_marginTop="20dp"
-            android:layout_below="@id/amount_time"
+            android:layout_below="@id/spinner1"
             android:layout_alignLeft="@+id/spinner1"
             android:layout_alignRight="@+id/spinner1"
             android:text="@string/label_total" />
@@ -76,9 +49,9 @@
         <TextView
             android:id="@+id/amount_total"
             style="@style/OutputStyle"
-            android:layout_toRightOf="@+id/label_total"
+            android:layout_alignRight="@id/amount_Dollars"
             android:layout_alignBottom="@+id/label_total"
-            android:layout_alignRight="@id/amount_weight" />
+            android:layout_toRightOf="@+id/label_total" />
 
         <Button
             android:id="@+id/calculate_button"
@@ -86,8 +59,8 @@
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/amount_total"
-            android:text="@string/button_calculate"
-            android:onClick="calculate"/>
+            android:text="Convert"
+            />
 
     </RelativeLayout>
 
